@@ -7,6 +7,15 @@
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	text-align:center;
 }
+.notice {
+	background-color:#2AFF00;
+	margin:50px 0px 0px 0px;
+	height: 35px;
+	box-shadow:5px 5px 5px 5px #0D0D0D;
+	font-size:24px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align:center;
+}
 .top {
 	background-color:#4F63FD;
 	height:60px;
