@@ -40,6 +40,18 @@ body {
 	color: #04B906;
 }
 </style>
+<script type="text/javascript">
+function openGuildThread() {
+    window.open('http://hypixel.net/threads/guild-quakecraft-bfgteam-quakecraft-at-its-highest-level.29418/');
+}
+function openChallengeThread() {
+    window.open('http://hypixel.net/threads/bfgteam-match-and-challenge-results.29572/');
+}
+function openApplicatonThread() {
+	window.open('http://hypixel.net/threads/guild-quakecraft-bfgteam-applications.179068/')
+}
+</script>
+
 </head>
 <body>
 	<div class="header">
@@ -50,12 +62,19 @@ body {
 		Welcome to the Quakecraft elites.
 	</div>
 
-	<div class="left-sidebar">
+	<div class="left-sidebar" onclick="openApplicatonThread()">
+		<strong>CLICK</strong><br>
 		Apply here!
 	</div>
 
-	<div class="left-sidebar">
+	<div class="left-sidebar" onclick="openGuildThread()">
+		<strong>CLICK</strong><br>
 		View our forum page.
+	</div>
+	
+	<div class="left-sidebar" onclick="openApplicatonThread()">
+		<strong>CLICK</strong><br>
+		Submit challenge results here.
 	</div>
 </body>
 </html>
