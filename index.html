@@ -1,45 +1,132 @@
 <html>
-<head>
-<title>Buddyblind - Home</title>
-<style type="text/css">
-body {
-	margin:0px 0px 0px 0px;
-	font-family: raleway, bebas-neue, sans-serif;
-	background-color: #2E2E2E;
-}
-.header {
-	padding-left: 100px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	background-color: #000000;
-	border-bottom-width: 5px;
-	border-bottom-color: #00FF40;
-	border-bottom-style: solid;
-	font-size: 30px;
-	left: 0px;
-	right: 0px;
-	position: fixed;
-	color: #FFFFFF;
-}
-.welcome-title {
-	color: #FF8000;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	font-size: 200px;
-    position: absolute;
-    height: 50px;
-    top: 100px;
-    text-align: center;
-}
-</style>
-</head>
-<body>
-	<div class="header">
-		<b>Buddyblind</b>
-	</div>
+	<head>
+		<script type="text/javascript">
+			var scrl = " Buddyblind - Porfolio ||";
+			function scrollingtitle() {
+ 			scrl = scrl.substring(1, scrl.length) + scrl.substring(0, 1);
+ 			document.title = scrl;
+ 			setTimeout("scrollingtitle()", 200);
+ 		}
+ 		</script>
+        <link rel="stylesheet" href="assets/bootstuff.css">
+	</head>	
 
-	<div class="welcome-title">
-		<b>Such website, very nothing.</b>
-	</div>
-</body>
+	<body onLoad="scrollingtitle()">
+		<div class="jumbotron">
+            <div class="container">
+                <h1>My Portfolio</h1>
+                <h3>Hey, my name is Buddyblind, but you can call me James. </h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Who am I?</div>
+                <div class="panel-body">
+                	Well, I go by the name of Buddyblind but I don't mind you calling me James.<br><br>
+
+                	I'm a 14 year old student from Perth, Western Australia. My primaral focus Java development but I can also code a bit of HTML and related languages. 
+                </div>
+            </div>
+        </div>       
+
+        <div class="container">
+            <div class="panel panel-danger"> <!-- No my development is not dangerous XD -->
+                <div class="panel-heading">Development</div>
+                <div class="panel-body">
+                	In terms of development, I tend to stay within the boundtries of Minecraft. I mainly work on BungeeCord plugins but I tend to find myself coding Bukkit plugins, too. I don't have many public plugins as most things I've coded are private.<br><br>
+
+                	<table class="table table-bordered">
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Downloadable</th>
+                            <th>The goal</th>
+                        </tr>
+
+                        <tr>
+                            <td>Clean-Proxy</td>
+                            <td>BungeeCord plugin</td>
+                            <td>Download <a href="http://buddyblind.github.io/projects/clean-proxy/">here</a>.</td>
+                            <td>The entire goal behind this was to make BungeeCord cleaner with additional features.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Planetary Evacuation</td>
+                            <td>Bukkit/Spigot plugin</td>
+                            <td>Broke over time and caused serve lag. Could easily recode, though. Download removed.</td>
+                            <td>This was just a plugin to have fun with and to test my Bukkit skills. Essentially a staff member would run the command /evacuate which would place everyone on their own rocket and send them up into the sky! Complete with sound effects and particles.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Reloadable BungeeCord</td>
+                            <td>Modified BungeeCord</td>
+                            <td>Private plugin, but I guess it's worth listing. As seen on KittyCraft and the Aquarius Network.</td>
+                            <td>The idea is simple, but the code behind it was a painful. The normal /greload command just reloads the BungeeCord config (As seen <a href="https://github.com/SpigotMC/BungeeCord/blob/master/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java">here</a>). This modified BungeeCord reloads both the config and all the plugins on the server.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Aquarius's Plugins</td>
+                            <td>Everything</td>
+                            <td>I can't really give you a download, since the plugins are deeply intergrated within Aquarius's systems and of course it's private.</td>
+                            <td>At the Aquarius Network I coded lots of Bungee features and made the basic minigame, known as "Bow Battles". I also went over many of their plugins and recoded it and make the APIs feel and look better, and of course function better.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>          
+
+        <div class="container">
+            <div class="panel panel-success">
+                <div class="panel-heading">Education</div>
+                <div class="panel-body">
+                	Lots of server owners seem to be intersted in my education, so I guess this is the best I can do.<br><br>
+
+                	<table class="table table-bordered">
+                        <tr>
+                            <th>School Name</th>
+                            <th>Starting Grade</th>
+                            <th>Finishing Grade</th>
+                            <th>Website</th>
+                        </tr>
+
+                        <tr>
+                            <td>St Benedict's</td>
+                            <td>Kindergarten</td>
+                            <td>Kindergarten</td>
+                            <td><a href="http://stbenedictswa.com/">http://stbenedictswa.com/</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>IONA</td>
+                            <td>Pre-Primary</td>
+                            <td>Grade 2</td>
+                            <td><a href="https://www.iona.wa.edu.au/">https://www.iona.wa.edu.au/</a> (It was coed at one stage)</td>
+                        </tr>
+
+                        <tr>
+                            <td>All Saints' College</td>
+                            <td>Grade 2</td>
+                            <td>Grade 4</td>
+                            <td><a href="http://www.allsaints.wa.edu.au/">http://www.allsaints.wa.edu.au/</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Brentwood Primary School</td>
+                            <td>Grade 4</td>
+                            <td>Grade 7</td>
+                            <td><a href="http://www.brentwoodps.wa.edu.au/">http://www.brentwoodps.wa.edu.au/</a> (This website may kill your eyes)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Applecross Senior High School</td>
+                            <td>Grade 8</td>
+                            <td>Current</td>
+                            <td><a href="http://www.applecross.wa.edu.au/ ">http://www.applecross.wa.edu.au/ </a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>          
+	</body>
 </html>
